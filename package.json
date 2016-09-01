@@ -1,0 +1,35 @@
+{
+  "name": "agartha",
+  "description": "Agartha cli",
+  "version": "1.0.1",
+  "author": "Alberto Ortiz Flores <aortiz@nyu.edu>",
+  "contributors": [
+    "Alberto Ortiz Flores <aortiz@nyu.edu>"
+  ],
+  "keywords": [
+    "agartha",
+    "framework",
+    "web",
+    "app",
+    "api"
+  ],
+  "repository": "NYULibraries/agartha.js",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "2.7.1"
+  },
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "agartha": "./bin/agartha"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "files": [
+    "bin/",
+    "templates/"
+  ],
+  "scripts": {}
+}
