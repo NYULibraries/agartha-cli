@@ -1,5 +1,5 @@
 {
-  "name": "agartha",
+  "name": "agartha-cli",
   "description": "Agartha cli",
   "version": "1.0.1",
   "author": "Alberto Ortiz Flores <aortiz@nyu.edu>",
@@ -13,10 +13,11 @@
     "app",
     "api"
   ],
-  "repository": "NYULibraries/agartha.js",
+  "repository": "https://github.com/NYULibraries/agartha-cli",
   "license": "MIT",
   "dependencies": {
-    "commander": "2.7.1"
+    "commander": "2.7.1",
+    "agartha" : "https://github.com/NYULibraries/agartha/archive/1.0.1-beta.tar.gz"
   },
   "main": "index.js",
   "preferGlobal": true,
