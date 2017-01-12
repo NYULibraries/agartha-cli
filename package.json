@@ -8,29 +8,30 @@
   ],
   "keywords": [
     "agartha",
-    "framework",
-    "web",
-    "app",
-    "api"
+    "framework"
   ],
-  "repository": "https://github.com/NYULibraries/agartha-cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NYULibraries/agartha-cli"
+  },
   "license": "MIT",
   "dependencies": {
     "commander": "2.7.1",
-    "agartha" : "https://github.com/NYULibraries/agartha/archive/1.0.1-beta.tar.gz"
+    "update-notifier": "^1.0.3",
+    "agartha": "https://api.github.com/repos/NYULibraries/agartha/tarball/1.0.2-beta"
   },
   "main": "index.js",
   "preferGlobal": true,
   "bin": {
-    "agartha": "./bin/agartha"
+    "agartha": "./bin/index"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "make-lint": "^1.0.1"
+  },
   "engines": {
-    "node": ">= 0.10"
+    "node": ">= 7.4"
   },
-  "files": [
-    "bin/",
-    "templates/"
-  ],
-  "scripts": {}
+  "os": [
+    "!win32"
+  ]
 }

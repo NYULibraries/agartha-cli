@@ -40,6 +40,11 @@ program
     .command('forge')
     .description('Forge a project')
     .action(forge);
+    
+program
+    .command('upgrade')
+    .description('Upgrade application')
+    .action(upgrade);
 
 program
   .parse(process.argv);
@@ -69,6 +74,16 @@ function confirm(msg, callback) {
     rl.close();
     callback(/^y|yes|ok|true$/i.test(input));
   });
+}
+
+function upgrade () {
+
+  const AutoUpdate = require('./lib/autoupdater/index');
+  
+  const update = new AutoUpdate();
+
+  update.on('finish', () => console.log('finished updating'));
+
 }
 
 /**
