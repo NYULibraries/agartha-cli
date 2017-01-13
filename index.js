@@ -6,7 +6,7 @@ const program = require('commander');
 
 const pkg = require('./package.json');
 
-const Commands = require('./lib/agartha-cli-commands');
+const Commands = require('agartha-cli-commands');
 
 const commands = new Commands();
 
