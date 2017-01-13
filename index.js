@@ -19,7 +19,7 @@ function before (obj, method, fn) {
 }
 
 // set process title
-process.title = 'agartha';
+process.title = 'agartha-cli';
 
 before(program, 'outputHelp', function () {
   this.allowUnknownOption();
@@ -29,11 +29,11 @@ program
   .version(pkg.version)
   .usage('[options] [op]');
   
+commands.listOptions().forEach(function(option) {
+  program.option(option.flag, option.description);
+});
+
 commands.listCommands().forEach(function(element) {
-  program.command(element.command)
-  element.options.forEach(function(option) {
-    program.option(option.flag, option.description)
-  });
   program.command(element.command)
     .description(element.description)
     .action(element.action)
