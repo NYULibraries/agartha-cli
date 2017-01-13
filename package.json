@@ -17,11 +17,11 @@
   "license": "MIT",
   "dependencies": {
     "commander": "2.7.1",
-    "update-notifier": "^1.0.3",
-    "agartha": "https://api.github.com/repos/NYULibraries/agartha/tarball/1.0.2-beta"
+    "agartha": "https://api.github.com/repos/NYULibraries/agartha/tarball/1.0.2-beta",
+    "agartha-cli-commands" : "https://github.com/dismorfo/agartha-cli-commands/archive/1.0.0.tar.gz"
   },
   "main": "index.js",
-  "preferGlobal": true,
+  "preferGlobal": false,
   "bin": {
     "agartha": "./bin/index"
   },
