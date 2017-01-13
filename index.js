@@ -10,9 +10,6 @@ const Commands = require('agartha-cli-commands');
 
 const commands = new Commands();
 
-/**
- * Install a before function; AOP.
- */
 function before (obj, method, fn) {
   var old = obj[method];
   obj[method] = function () {
