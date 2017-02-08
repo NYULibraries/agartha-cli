@@ -18,7 +18,7 @@
   "dependencies": {
     "commander": "2.7.1",
     "agartha": "https://api.github.com/repos/NYULibraries/agartha/tarball/1.0.2-beta",
-    "agartha-cli-commands" : "https://github.com/dismorfo/agartha-cli-commands/archive/1.0.0.tar.gz"
+    "agartha-cli-commands" : "https://github.com/dismorfo/agartha-cli-commands/archive/1.0.1.tar.gz"
   },
   "main": "index.js",
   "preferGlobal": false,
