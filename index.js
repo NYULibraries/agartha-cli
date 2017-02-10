@@ -1,42 +1,44 @@
 #!/usr/bin/env node
 
-'use strict';
+'use strict'
 
-const program = require('commander');
+const pkg = require('./package.json')
 
-const pkg = require('./package.json');
+const agartha = require('agartha')
 
-const Commands = require('agartha-cli-commands');
+const program = require('commander')
 
-const commands = new Commands();
+const Commands = require('agartha-cli-commands')
+
+const commands = new Commands()
 
 function before (obj, method, fn) {
-  var old = obj[method];
+  var old = obj[method]
   obj[method] = function () {
-    fn.call(this);
-    old.apply(this, arguments);
+    fn.call(this)
+    old.apply(this, arguments)
   };
 }
 
 // set process title
-process.title = 'agartha-cli';
+process.title = 'agartha-cli'
 
 before(program, 'outputHelp', function () {
-  this.allowUnknownOption();
-});
+  this.allowUnknownOption()
+})
 
 program
   .version(pkg.version)
-  .usage('[options] [op]');
-  
+  .usage('[options] [op]')
+
 commands.listOptions().forEach(function(option) {
-  program.option(option.flag, option.description);
-});
+  program.option(option.flag, option.description)
+})
 
 commands.listCommands().forEach(function(element) {
   program.command(element.command)
     .description(element.description)
     .action(element.action)
-});
+})
 
-program.parse(process.argv);
+program.parse(process.argv)
