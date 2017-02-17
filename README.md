@@ -16,6 +16,11 @@ The quickest way to get started with express is to utilize the executable `agart
 ```bash
 $ agartha create foo -r generic
 ```
+## Build site:
+
+```bash
+$ cd foo && agartha forge
+```
 ## Command Line Options
 
 This generator can also be further configured with the following command line flags.
