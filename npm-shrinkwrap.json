@@ -8,12 +8,12 @@
       "resolved": "https://registry.npmjs.org/abbrev/-/abbrev-1.1.0.tgz"
     },
     "agartha": {
-      "version": "1.0.3-beta",
+      "version": "1.0.4-beta",
       "from": "https://github.com/NYULibraries/agartha/archive/1.0.4-beta.tar.gz",
       "resolved": "https://github.com/NYULibraries/agartha/archive/1.0.4-beta.tar.gz"
     },
     "agartha-cli-commands": {
-      "version": "1.0.1",
+      "version": "1.0.2",
       "from": "https://github.com/dismorfo/agartha-cli-commands/archive/1.0.2.tar.gz",
       "resolved": "https://github.com/dismorfo/agartha-cli-commands/archive/1.0.2.tar.gz"
     },
