@@ -17,7 +17,7 @@ function before (obj, method, fn) {
   obj[method] = function () {
     fn.call(this)
     old.apply(this, arguments)
-  };
+  }
 }
 
 // set process title
@@ -31,11 +31,11 @@ program
   .version(pkg.version)
   .usage('[options] [op]')
 
-commands.listOptions().forEach(function(option) {
+commands.listOptions().forEach(function (option) {
   program.option(option.flag, option.description)
 })
 
-commands.listCommands().forEach(function(element) {
+commands.listCommands().forEach(function (element) {
   program.command(element.command)
     .description(element.description)
     .action(element.action)
