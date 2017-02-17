@@ -3,35 +3,27 @@ Agartha.js application generator.
 ## Installation
 
 ```sh
-$ npm install -g agartha
+$ git clone https://github.com/NYULibraries/agartha-cli
+$ cd agartha-cli && npm install
 ```
 
 ## Quick Start
 
 The quickest way to get started with express is to utilize the executable `agartha(1)` to generate an application as shown below:
 
-Create the app:
+## Create the app:
 
 ```bash
-$ agartha /tmp/foo && cd /tmp/foo
+$ agartha create foo -r generic
 ```
-
-Install dependencies:
+## Build site:
 
 ```bash
-$ npm install
+$ cd foo && agartha forge
 ```
-
-Rock and Roll
-
-```bash
-$ npm start
-```
-
 ## Command Line Options
 
 This generator can also be further configured with the following command line flags.
 
-    -h, --help          output usage information
-    -V, --version       output the version number
-    -f, --force         force on non-empty directory
+    -r, --relic [relic]     Which relic to use
+    -f, --force             force on non-empty directory    
