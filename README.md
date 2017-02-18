@@ -1,5 +1,3 @@
-Agartha.js application generator.
-
 ## Installation
 
 ```sh
