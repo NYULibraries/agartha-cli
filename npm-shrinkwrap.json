@@ -13,9 +13,9 @@
       "resolved": "https://github.com/NYULibraries/agartha/archive/1.0.4-beta.tar.gz"
     },
     "agartha-cli-commands": {
-      "version": "1.0.2",
-      "from": "https://github.com/dismorfo/agartha-cli-commands/archive/1.0.4.tar.gz",
-      "resolved": "https://github.com/dismorfo/agartha-cli-commands/archive/1.0.4.tar.gz"
+      "version": "1.0.5",
+      "from": "https://github.com/dismorfo/agartha-cli-commands/archive/1.0.5.tar.gz",
+      "resolved": "https://github.com/dismorfo/agartha-cli-commands/archive/1.0.5.tar.gz"
     },
     "ajv": {
       "version": "5.2.3",
