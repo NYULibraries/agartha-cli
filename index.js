@@ -10,8 +10,6 @@ const program = require('commander')
 
 const Commands = require('agartha-cli-commands')
 
-const commands = new Commands()
-
 function before (obj, method, fn) {
   var old = obj[method]
   obj[method] = function () {
@@ -30,15 +28,5 @@ before(program, 'outputHelp', function () {
 program
   .version(pkg.version)
   .usage('[options] [op]')
-
-commands.listOptions().forEach(function (option) {
-  program.option(option.flag, option.description)
-})
-
-commands.listCommands().forEach(function (element) {
-  program.command(element.command)
-    .description(element.description)
-    .action(element.action)
-})
-
-program.parse(process.argv)
+  
+const commands = new Commands(program)
