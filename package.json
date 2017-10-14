@@ -24,7 +24,7 @@
   "preferGlobal": false,
   "bin": {
     "agartha": "./bin/agartha"
-  }
+  },
   "engines": {
     "node": ">= 7.4"
   },
