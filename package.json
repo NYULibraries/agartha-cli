@@ -1,7 +1,7 @@
 {
   "name": "agartha-cli",
   "description": "Agartha cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Alberto Ortiz Flores <aortiz@nyu.edu>",
   "contributors": [
     "Alberto Ortiz Flores <aortiz@nyu.edu>"
