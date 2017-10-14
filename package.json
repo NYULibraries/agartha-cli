@@ -16,7 +16,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "agartha": "https://github.com/NYULibraries/agartha/archive/1.0.4-beta.tar.gz",
+    "agartha": "https://github.com/NYULibraries/agartha/archive/1.0.5.tar.gz",
     "agartha-cli-commands": "https://github.com/dismorfo/agartha-cli-commands/archive/1.0.6.tar.gz",
     "commander": "2.7.1"
   },
