@@ -23,11 +23,8 @@
   "main": "index.js",
   "preferGlobal": false,
   "bin": {
-    "agartha": "./bin/index"
-  },
-  "devDependencies": {
-    "make-lint": "^1.0.1"
-  },
+    "agartha": "./bin/agartha"
+  }
   "engines": {
     "node": ">= 7.4"
   },
